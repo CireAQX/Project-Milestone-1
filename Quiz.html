@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rocket City Moon Men | Key Concepts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="banner">
+<img class="banner-logo" src="images/Primary-Logo.png" alt="RCU Logo">
+<p class="banner-title">STAR PLAYER QUIZ</p>
+<p class="banner-subtitle">Test Your Knowledge of the 2025 Moon Men</p>
+</div>
+<nav class="navbar">
+<a class="nav-link">HOME</a>
+<a href="Season1.html" class="nav-link">S1</a>
+<a href="Concepts.html" class="nav-link nav-active">KEY CONCEPTS</a>
+<a href="Quiz.html" class="nav-link">QUIZ</a>
+<a href="About.html" class="nav-link">ABOUT</a>
+</nav>
+
+<div id="main-content">
+ 
+<h2>How Well Do You Know the Moon Men?</h2>
+<p style="text-align: center;">Answer the questions below and hit Submit to see your score.</p>
+ 
+<p><b>1. Jordan Vaughn finished as the #2 finalist for which major college football award?</b></p>
+<input type="text" id="q1" style="padding: 5px; font-size: 16px;">
+<p id="r1"></p>
+ 
+<p><b>2. How many national defensive awards did Tim Missile win in the 2025 season?</b></p>
+<input type="radio" name="q2" id="q2a" value="1"> 1<br>
+<input type="radio" name="q2" id="q2b" value="2"> 2<br>
+<input type="radio" name="q2" id="q2c" value="3"> 3<br>
+<input type="radio" name="q2" id="q2d" value="4"> 4<br>
+<p id="r2"></p>
+ 
+<p><b>3. Greg Williams threw 7 interceptions in his first 4 starts. How many did he throw in his final 8 starts?</b></p>
+<input type="radio" name="q3" id="q3a" value="0"> 0<br>
+<input type="radio" name="q3" id="q3b" value="3"> 3<br>
+<input type="radio" name="q3" id="q3c" value="5"> 5<br>
+<input type="radio" name="q3" id="q3d" value="7"> 7<br>
+<p id="r3"></p>
+ 
+<p><b>4. Which player caught the game-winning touchdown at Auburn from third-string QB Ryan Vincent?</b></p>
+<input type="radio" name="q4" id="q4a" value="graham"> Chris Graham<br>
+<input type="radio" name="q4" id="q4b" value="owusu"> Samuel Owusu<br>
+<input type="radio" name="q4" id="q4c" value="stewart"> Cody Stewart<br>
+<input type="radio" name="q4" id="q4d" value="brown"> Ryan Brown<br>
+<p id="r4"></p>
+ 
+<p><b>5. Nick Dorsey earned National Defensive Player of the Week honors after a dominant performance against which ranked opponent?</b></p>
+<input type="radio" name="q5" id="q5a" value="iowa"> #17 Iowa State<br>
+<input type="radio" name="q5" id="q5b" value="florida"> #4 Florida<br>
+<input type="radio" name="q5" id="q5c" value="auburn"> #23 Auburn<br>
+<input type="radio" name="q5" id="q5d" value="alabama"> #18 Alabama<br>
+<p id="r5"></p>
+ 
+<p><b>6. Which of the following players were named National First Team All-Americans in 2025?</b></p>
+<input type="checkbox" id="q6a"> Jordan Vaughn<br>
+<input type="checkbox" id="q6b"> Tim Missile<br>
+<input type="checkbox" id="q6c"> Cody Stewart<br>
+<input type="checkbox" id="q6d"> Nick Dorsey<br>
+<input type="checkbox" id="q6e"> Samuel Owusu<br>
+<p id="r6"></p>
+ 
+<p id="score" style="text-align: center; font-size: 22px; font-weight: bold;"></p>
+<p id="passfail" style="text-align: center; font-size: 22px; font-weight: bold;"></p>
+ 
+<div style="text-align: center;">
+<button onclick="submitQuiz()">Submit Quiz</button>
+<button onclick="resetQuiz()" >Reset Quiz</button>
+</div>
+ 
+</div>
+ 
+<div id="footer">
+<p>This is a class project for <a href="https://ksuweb.github.io/IT3203/" style="color: #ea0306;">IT 3203 Web Development</a>.</p>
+<p>2026 Rocket City Moon Men</p>
+</div>
+ 
+<script>
+
+ 
+function submitQuiz() 
+{ var score = 0;
+  var answer1 = document.getElementById("q1").value.toLowerCase().trim();
+ 
+if (answer1 === "heisman" || answer1 === "heisman trophy") 
+   
+{ score = score + 1;
+  document.getElementById("r1").innerHTML = "Correct!";
+  document.getElementById("r1").style.color = "#008800"; } 
+     
+else 
+
+{ document.getElementById("r1").innerHTML = "Incorrect.";
+  document.getElementById("r1").style.color = "#ea0306"; }
+ 
+if (document.getElementById("q2c").checked === true) 
+     
+{ score = score + 1;
+  document.getElementById("r2").innerHTML = "Correct!";
+  document.getElementById("r2").style.color = "#008800"; } 
+       
+else 
+
+{ document.getElementById("r2").innerHTML = "Incorrect.";
+  document.getElementById("r2").style.color = "#ea0306"; }
+ 
+if (document.getElementById("q3b").checked === true) 
+
+{ score = score + 1;
+  document.getElementById("r3").innerHTML = "Correct!";
+  document.getElementById("r3").style.color = "#008800"; }
+
+else 
+
+{ document.getElementById("r3").innerHTML = "Incorrect.";
+  document.getElementById("r3").style.color = "#ea0306"; }
+ 
+if (document.getElementById("q4b").checked === true) 
+
+{ score = score + 1;
+  document.getElementById("r4").innerHTML = "Correct!";
+  document.getElementById("r4").style.color = "#008800"; } 
+  
+else 
+
+{ document.getElementById("r4").innerHTML = "Incorrect.";
+  document.getElementById("r4").style.color = "#ea0306"; }
+ 
+if (document.getElementById("q5b").checked === true) 
+
+{ score = score + 1;
+  document.getElementById("r5").innerHTML = "Correct!";
+  document.getElementById("r5").style.color = "#008800"; } 
+  
+else 
+
+{ document.getElementById("r5").innerHTML = "Incorrect.";
+  document.getElementById("r5").style.color = "#ea0306"; }
+ 
+if (document.getElementById("q6a").checked === true &&
+    document.getElementById("q6b").checked === true &&
+    document.getElementById("q6d").checked === true) 
+
+{ score = score + 1;
+  document.getElementById("r6").innerHTML = "Correct!";
+  document.getElementById("r6").style.color = "#008800"; } 
+  
+else 
+
+{ document.getElementById("r6").innerHTML = "Incorrect.";
+  document.getElementById("r6").style.color = "#ea0306"; }
+
+document.getElementById("score").innerHTML = "Score: " + score + " / 6";
+ 
+if (score >= 4) 
+
+{ document.getElementById("passfail").innerHTML = "PASS";
+  document.getElementById("passfail").style.color = "#008800"; } 
+  
+else 
+
+{ document.getElementById("passfail").innerHTML = "FAIL - You need at least 4 correct to pass.";
+  document.getElementById("passfail").style.color = "#ea0306"; }}
+ 
+ 
+function resetQuiz() 
+
+{ document.getElementById("q1").value = "";
+  document.getElementById("q2a").checked = false;
+  document.getElementById("q2b").checked = false;
+  document.getElementById("q2c").checked = false;
+  document.getElementById("q2d").checked = false;
+ 
+  document.getElementById("q3a").checked = false;
+  document.getElementById("q3b").checked = false;
+  document.getElementById("q3c").checked = false;
+  document.getElementById("q3d").checked = false;
+ 
+  document.getElementById("q4a").checked = false;
+  document.getElementById("q4b").checked = false;
+  document.getElementById("q4c").checked = false;
+  document.getElementById("q4d").checked = false;
+ 
+  document.getElementById("q5a").checked = false;
+  document.getElementById("q5b").checked = false;
+  document.getElementById("q5c").checked = false;
+  document.getElementById("q5d").checked = false;
+ 
+  document.getElementById("q6a").checked = false;
+  document.getElementById("q6b").checked = false;
+  document.getElementById("q6c").checked = false;
+  document.getElementById("q6d").checked = false;
+  document.getElementById("q6e").checked = false;
+ 
+  document.getElementById("r1").innerHTML = "";
+  document.getElementById("r2").innerHTML = "";
+  document.getElementById("r3").innerHTML = "";
+  document.getElementById("r4").innerHTML = "";
+  document.getElementById("r5").innerHTML = "";
+  document.getElementById("r6").innerHTML = "";
+ 
+  document.getElementById("score").innerHTML = "";
+  document.getElementById("passfail").innerHTML = ""; }
+
+</script>
+</body>
+</html>

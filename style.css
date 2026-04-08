@@ -156,10 +156,9 @@ img
 { flex: 1;
   max-width: 400px; }
 
-.uniforms-center {
-    text-align: center;
-    margin: 30px 0;
-}
+.uniforms-center 
+{ text-align: center;
+  margin: 30px 0; }
 
 .uniforms-image 
 { max-width: 400px;
@@ -168,4 +167,64 @@ img
     display: block;
     margin: 0 auto; }
 
-  
+.nav-link:hover 
+{ background-color: #ea0306;
+  color: #ffffff;
+  text-decoration: none; }
+
+.star-player:hover 
+{ color: #ea0306;
+  text-decoration: underline; }
+
+.win 
+{ color: #008800;
+  font-weight: bold; }
+
+.loss 
+{ color: #ea0306;
+  font-weight: bold; }
+
+.quiz-question 
+{ margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #000000; }
+ 
+.quiz-question p 
+{ font-weight: bold; }
+ 
+.quiz-result 
+{ padding: 10px;
+  margin-top: 5px;
+  font-weight: bold; }
+ 
+.correct 
+{ color: #008800; }
+ 
+.incorrect 
+{ color: #ea0306; }
+ 
+.quiz-score 
+{ text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0; }
+ 
+.pass 
+{ color: #008800; }
+ 
+.fail 
+{ color: #ea0306; }
+ 
+.quiz-btn 
+{ display: block;
+  margin: 15px auto;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+  cursor: pointer; }
+ 
+.quiz-btn:hover 
+{ background-color: #0096fd; }
