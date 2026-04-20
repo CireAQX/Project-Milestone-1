@@ -242,7 +242,8 @@ img
 
 table 
 { display: block;
-overflow-x: auto; }
+  overflow-x: auto;
+  margin: 10px auto; }
 
 .banner-logo 
 { max-height: 120px; }
@@ -255,6 +256,12 @@ h1
  
 h2 
 { font-size: 18px; }
+
+.image-center img 
+{ max-width: 250px; }
+
+.uniforms-center img 
+{ max-width: 300px; }
 
                        }
 
@@ -288,10 +295,10 @@ li
 { font-size: 16px; }
 
 #banner 
-{ padding: 25px 10px; }
+{ padding: 15px 10px; }
  
 .banner-logo 
-{ max-height: 80px; }
+{ max-height: 150px; }
  
 .banner-title 
 { font-size: 20px; }
@@ -308,5 +315,11 @@ img
 
  .three-column 
 { flex-direction: column; }
+
+.image-center img 
+{ max-width: 200px; }
+
+.uniforms-center img 
+{ max-width: 250px; }
 
 }
