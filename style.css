@@ -258,6 +258,10 @@ h2
 .uniforms-center img 
 { max-width: 300px; }
 
+img 
+{ max-width: 250px;
+  height: auto; }
+
                        }
 
 @media (max-width: 480px) 
@@ -302,7 +306,7 @@ li
 { font-size: 13px; }
 
 img 
-{ max-width: 100%;
+{ max-width: 250px;
   height: auto; }
 
  #main-content 
