@@ -240,11 +240,6 @@ img
 .column 
 { max-width: 100%; }
 
-table 
-{ display: block;
-  overflow-x: auto;
-  margin: 10px auto; }
-
 .banner-logo 
 { max-height: 120px; }
 
