@@ -258,9 +258,7 @@ h2
 .uniforms-center img 
 { max-width: 300px; }
 
-img 
-{ max-width: 250px;
-  height: auto; }
+
 
                        }
 
@@ -305,9 +303,6 @@ li
 .banner-subtitle 
 { font-size: 13px; }
 
-img 
-{ max-width: 250px;
-  height: auto; }
 
  #main-content 
 { padding: 10px 10px; }
